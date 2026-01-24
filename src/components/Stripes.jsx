@@ -28,7 +28,7 @@ function Stripes() {
     },
   ];
   return (
-    <div className="flex justify-evenly items-center mt-20">
+    <div className="flex justify-evenly items-center mt-30">
       {data.map((elem, index) => (
         <Stripe val={elem} />
       ))}
