@@ -39,20 +39,23 @@ function Work() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       <div className=" relative max-w-screen-xl mx-auto text-center ">
         <h1 className="text-[30vw] leading-none tracking-tight select-none ">
           Work
         </h1>
         <div className="absolute top-0 w-full h-full ">
-          {images.map((elem, index) => (elem.isActive && ((
-              <img
-                className="w-60 rounded-md absolute -translate-x-[50%] -translate-y-[50%] "
-                src={elem.url}
-                style={{ top: elem.top, left: elem.left }}
-                alt="images"
-              />
-            ))) )}
+          {images.map(
+            (elem, index) =>
+              elem.isActive && (
+                <img
+                  className="w-60 rounded-md absolute -translate-x-[50%] -translate-y-[50%]  "
+                  src={elem.url}
+                  style={{ top: elem.top, left: elem.left }}
+                  alt="images"
+                />
+              ),
+          )}
         </div>
       </div>
     </div>
